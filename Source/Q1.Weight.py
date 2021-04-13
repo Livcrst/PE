@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt #para plotar
-dados = open('Data\weight_chart.txt','r')
+dados = open('weight_chart.txt','r')
 
 def tratarDados(dados):
     #Percorrendo para salvar os dados do arquivo para 
