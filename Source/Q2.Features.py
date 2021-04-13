@@ -1,4 +1,5 @@
-import matplotlib.pyplot as plt #para plotar meus grafos 
+import matplotlib.pyplot as plt #para plotar
+import seaborn as sns
 
 arquivo = open('feature_count.txt')
 
@@ -20,11 +21,8 @@ def tratarDados(dados):
         y.append(ey)
     return x, y
 teste,testano = tratarDados(arquivo)
-
 print(teste,testano)
 plt.barh(teste,testano,color="gray")
-plt.xlabel('Age (months)')
-plt.ylabel('Weight (kg)')
+plt.xlabel('Number of features')
 plt.legend()
-plt.title("The relationship between age and weight in a growing infant")
-plt.show()
+plt.show() 
