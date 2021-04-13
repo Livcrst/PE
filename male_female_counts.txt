@@ -1,0 +1,10 @@
+D1Male 2
+D1Female 1
+D2Male 2
+D2Female 3
+D3Male 3
+D3Female 6
+D4Male 5
+D4Female 10
+D5Male 9
+D5Female 18

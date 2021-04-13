@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt #para plotar
-import seaborn as sns
 
 arquivo = open('feature_count.txt')
 
