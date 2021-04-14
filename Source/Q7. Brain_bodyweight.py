@@ -1,15 +1,17 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dados = pd.read_csv('brain_bodyweight.txt',delimiter="\t")
+dados = pd.read_csv('brain_bodyweight.txt',delimiter="\t") #Lê arquivo
 
+
+#Separa os dados lidos com o pandas
 Brainweight = dados['Brainweight']
 Bodyweight = dados['Bodyweight ']
 Brainweight_SEM = dados['Brainweight.SEM']
 Bodyweight_SEM = dados['Bodyweight.SEM']
 Species  = dados['Species ']
 
-fig, ax = plt.subplots(figsize=(6,6))
+fig, ax = plt.subplots(figsize=(6,6)) #Configuração do plot
 
 ax.errorbar(Brainweight, Bodyweight, xerr=Brainweight_SEM, yerr=Bodyweight_SEM,
              marker='o', markersize=2.5, color="k", capsize=3, linestyle='none')

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 dado = open('chromosome_position_data.txt')
 
 def tratarDados(dados):
-    #Percorrendo para salvar os dados do arquivo para 
+    #Percorrendo para salvar os dados do arquivo para lista
     TratarDados = []
     for i in dados:
         dado = i.rstrip()
@@ -30,6 +30,7 @@ def tratarDados(dados):
     return positions,mut1,mut2,wt
 pos,mut1,mut2,wt = tratarDados(dado)
 
+#Cria o gráfico
 plt.plot(pos,mut1,color='red',label='Mut1')
 plt.plot(pos,mut2,color='blue',label='Mut2')
 plt.plot(pos,wt,color='green',label='WT')

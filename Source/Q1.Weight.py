@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt #para plotar
-dados = open('weight_chart.txt','r')
+dados = open('weight_chart.txt','r') #le o arquivo TXT
 
 def tratarDados(dados):
-    #Percorrendo para salvar os dados do arquivo para 
+    #Percorrendo para salvar os dados do arquivo para salvar em uma lista 
     TratarDados = []
     for i in dados:
         dado = i.rstrip()
@@ -20,7 +20,7 @@ def tratarDados(dados):
     return x, y
 teste,testano = tratarDados(dados)
 
-print(teste,testano)
+#Geração do gráfico a ser plotado
 plt.plot(teste,testano, marker="o",color="black")
 plt.xlabel('Age (months)')
 plt.ylabel('Weight (kg)')
